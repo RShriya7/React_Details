@@ -5,8 +5,12 @@ import viteLogo from './assets/vite.svg'
 import './App.css'
 
 import Child from './Child';
+import DiffDataTypes from './DiffDataTypesProps'
 
 function App() {
+  function handleClick() {
+    alert("Button clicked!");
+  }
  
 
   return (
@@ -17,7 +21,7 @@ function App() {
     <Child name = "abc" age ={22} />
 
       {/*Ex-2: different data types   */}
-       <Child
+       <DiffDataTypes
         name="Shriya"
         age={23}
         isStudent={true}

@@ -1,4 +1,4 @@
-function Child({props})
+function DiffDataTypes(props)
 {
     return (
         <>
@@ -7,7 +7,7 @@ function Child({props})
 
             {/* 2.Number */}
             <p> Age: {props.age}</p>
-            
+
              {/* 3. Boolean */}
             <p>Student: {props.isStudent ? "Yes" : "No"}</p>
 
@@ -28,3 +28,5 @@ function Child({props})
     );
 
 }
+
+export default DiffDataTypes;
