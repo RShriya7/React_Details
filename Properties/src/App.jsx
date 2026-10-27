@@ -16,6 +16,16 @@ function App() {
     <Child name="shriya" age={24} />
     <Child name = "abc" age ={22} />
 
+      {/*Ex-2: different data types   */}
+       <Child
+        name="Shriya"
+        age={23}
+        isStudent={true}
+        skills={["Java", "React", "SQL"]}
+        user={{ name: "Hyderabad" }}
+        onClick={handleClick}
+        icon={<span>⭐</span>}
+      />
     </>
   )
 }
