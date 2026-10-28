@@ -19,3 +19,4 @@ If you are developing a production application, we recommend using TypeScript wi
 File                        Concept 
 Child.jsx                    basics like to know how are props passed from parent to child.
 DiffdataTypesProps.jsx       covering diff.data types of js to be passed as props.           
+DefaultProps.jsx            passing default values; tried undefined scenarios as well

@@ -6,6 +6,7 @@ import './App.css'
 
 import Child from './Child';
 import DiffDataTypes from './DiffDataTypesProps'
+import DefaultProps from './DefaultProps'
 
 function App() {
   function handleClick() {
@@ -30,6 +31,14 @@ function App() {
         onClick={handleClick}
         icon={<span>⭐</span>}
       />
+
+      {/* Ex-3: default props*/}
+      <DefaultProps name="abc"/>
+      <DefaultProps name="123" age={undefined}/>
+      <DefaultProps name="123" age={0}/>
+      <DefaultProps name="123" age={null}/>
+      <DefaultProps name="123" age={false}/>
+      <DefaultProps name="123" age=""/>
     </>
   )
 }
