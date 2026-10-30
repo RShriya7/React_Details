@@ -10,6 +10,8 @@ import DefaultProps from './DefaultProps'
 import RenamingPropsDestructuring from './RenamingPropsDestructuring'
 import NestedObjectsAsProps from './NestedObjects_Props'
 import PassingFun_Props from './PassingFunctionsAsProps'
+import Children from './Children'
+import Children2 from './Children2'
 
 function App() {
   function handleClick() {
@@ -24,6 +26,11 @@ function App() {
         },
         country:"india"
       };
+
+    const user1={
+      name:"abc",
+      age:23
+    };
 
   {/* Passing function as prop */}
   function handleGreet()
@@ -67,6 +74,40 @@ function App() {
 
       {/* Passing function as prop */}
       <PassingFun_Props onGreet = {handleGreet}/>
+
+      {/*Passing Children to component */}
+      <Children>
+        <h2>React Props</h2>
+        <p>Props help us reuse components.</p>
+        <button>Learn More</button>
+      </Children>  
+
+      <div>
+        <Children>
+          <h2>React Props</h2>
+          <p>Props help us reuse components.</p>
+          <button>Learn More</button>
+        </Children> 
+
+        <Children>
+          <h2>Java</h2>
+          <p>Java is used for backend development.</p>
+        </Children> 
+      </div>  
+
+      {/*Passing Children & Props to component */}  
+      <div>
+        <Children2 title="My Skills" emp={user1}>
+           <p>Java</p>
+          <p>React</p>
+          <p>SQL</p>
+        </Children2>
+
+         <Children2 title="My Goal">
+        <p>Get a ₹12 LPA job!</p>
+        <button>View Plan</button>
+      </Children2>
+      </div>
     </>
 
     

@@ -23,3 +23,4 @@ DefaultProps.jsx            passing default values; tried undefined scenarios as
 RenamingPropsDestructuring.jsx      -- while destructuring, renaming the props; used default values + renaming 
 NestedObjects_Props.jsx -- passing nested objects as props; renaming; default values; default objects
 PassingFunctionsAsProps/jsx -- passing function as a prop 
+Children.jsx -- how to pass children | passing props+children
